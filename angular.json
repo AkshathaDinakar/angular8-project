@@ -25,12 +25,26 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              
+              {
+                "glob": "**/*",
+                "input": "node_modules/@project-sunbird/sunbird-quml-player-v9/lib/assets/",
+                "output": "/assets/"
+              }
+              
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/qml-carousal.css",
+              "node_modules/@project-sunbird/sb-styles/assets/_styles.scss",
+              "node_modules/video.js/dist/video-js.min.css",
+              "node_modules/videojs-markers/dist/videojs.markers.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@project-sunbird/telemetry-sdk/index.js",
+              "node_modules/video.js/dist/video.js"
+            ]
           },
           "configurations": {
             "production": {
