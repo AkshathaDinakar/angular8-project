@@ -52,6 +52,7 @@ export class AppComponent {
   }
 
   telemetryEvent(event) {
+    
     console.log('in app: ', JSON.stringify(event));
   }
 }
